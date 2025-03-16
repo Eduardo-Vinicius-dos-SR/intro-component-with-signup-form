@@ -7,6 +7,7 @@ const idToRemove = "submit-btn";
 const fields = Array.from(allFields).filter((field) => field.id !== idToRemove);
 
 submitBtn.addEventListener("click", () => {
+	event.preventDefault();
 	let allValid = true;
 
 	fields.forEach((field, indice) => {

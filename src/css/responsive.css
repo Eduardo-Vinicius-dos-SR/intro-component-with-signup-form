@@ -17,6 +17,10 @@
 	.art .title {
 		font-size: 5rem;
 	}
+
+	.form .form-data {
+		padding: 40px;
+	}
 }
 
 @media (min-width: 1920px) {
@@ -51,7 +55,7 @@
 	.form .form-data {
 		gap: 1.1vw;
 		border-radius: 0.5vw;
-		padding: 1vw;
+		padding: 2.5vw;
 	}
 
 	.form-data .field {
