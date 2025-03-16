@@ -1,0 +1,16 @@
+:root {
+	/* ### Primary */
+
+	--Red: hsl(0, 100%, 74%);
+	--Green: hsl(154, 59%, 51%);
+	--White: hsl(0, 0%, 100%);
+
+	/* ### Accent */
+
+	--Blue: hsl(248, 32%, 49%);
+
+	/* ### Neutral */
+
+	--Dark-Blue: hsl(249, 10%, 26%);
+	--Grayish-Blue: hsl(246, 25%, 77%);
+}

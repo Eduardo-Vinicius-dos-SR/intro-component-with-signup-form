@@ -1,0 +1,91 @@
+@media (min-width: 768px) {
+	.art .title {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.form-page {
+		flex-direction: row;
+		background-image: url(../images/bg-intro-desktop.png);
+	}
+
+	.form-page .art {
+		text-align: left;
+	}
+
+	.art .title {
+		font-size: 5rem;
+	}
+}
+
+@media (min-width: 1920px) {
+	.form-page {
+		gap: 2vw;
+	}
+
+	.form-page .art {
+		max-width: 30vw;
+	}
+
+	.art .title {
+		font-size: 2.5vw;
+		margin-bottom: 1.5vw;
+	}
+
+	.art .description {
+		font-size: 0.9vw;
+	}
+
+	.form-page .form {
+		max-width: 33vw;
+		gap: 1.2vw;
+	}
+
+	.form .plan {
+		border-radius: 0.5vw;
+		padding: 1vw 4vw;
+		font-size: 0.9vw;
+	}
+
+	.form .form-data {
+		gap: 1.1vw;
+		border-radius: 0.5vw;
+		padding: 1vw;
+	}
+
+	.form-data .field {
+		border: 2px solid;
+		border-radius: 0.2vw;
+		padding: 1vw;
+		padding-bottom: 1vw;
+		font-size: 0.9vw;
+	}
+
+	.form-data .field#submit-btn {
+		padding-bottom: 0.8vw;
+	}
+
+	.form-data li:last-child p {
+		padding: 1vw 1.2vw;
+		font-size: 0.7vw;
+	}
+
+	/* Invalid Field */
+
+	.form-data li.invalid::after {
+		width: 1.5vw;
+		height: 1.5vw;
+		top: 0.8vw;
+		right: 1vw;
+	}
+
+	.form-data li.invalid .field {
+		padding-right: 2.5vw;
+	}
+
+	.form-data li p {
+		margin-top: 0.5vw;
+		font-size: 0.6vw;
+	}
+}

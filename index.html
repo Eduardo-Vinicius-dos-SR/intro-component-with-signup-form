@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Intro component with sign up form</title>
+
+		<link rel="stylesheet" href="./src/css/index.css" />
+	</head>
+	<body>
+		<main class="container">
+			<section class="form-page">
+				<article class="art">
+					<h1 class="title">Learn to code by watching others</h1>
+					<p class="description">
+						See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+						understanding how developers think is invaluable.
+					</p>
+				</article>
+				<div class="form">
+					<p class="plan"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+					<ul class="form-data">
+						<li>
+							<input type="text" class="field" placeholder="First Name" />
+							<p>First Name cannot be empty</p>
+						</li>
+						<li>
+							<input type="text" class="field" placeholder="Last Name" />
+							<p>Last Name cannot be empty</p>
+						</li>
+						<li>
+							<input type="email" class="field" placeholder="Email Address" />
+							<p>Looks like this is not an email</p>
+						</li>
+						<li>
+							<input type="password" class="field" placeholder="Password" />
+							<p>Password cannot be empty</p>
+						</li>
+						<li>
+							<input type="submit" class="field" id="submit-btn" value="Claim your free trial" />
+							<p class="terms-and-services">
+								By clicking the button, you are agreeing to our
+								<a href="#Terms-And-Services" target="_blank">Terms and Services</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<script src="./src/js/validation.js"></script>
+	</body>
+</html>

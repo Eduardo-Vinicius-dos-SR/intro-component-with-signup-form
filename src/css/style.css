@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+.form-page {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 50px;
+	padding: 50px 20px;
+	background-color: var(--Red);
+	background-image: url(../images/bg-intro-mobile.png);
+	background-position: center;
+}
+
+.form-page .art {
+	max-width: 500px;
+	text-align: center;
+	color: var(--White);
+}
+
+.art .title {
+	font-size: 3rem;
+	margin-bottom: 25px;
+}
+
+.art .description {
+	font-size: 1.6rem;
+}
+
+.form-page .form {
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.form .plan {
+	border-radius: 10px;
+	padding: 20px 80px;
+	background-color: var(--Blue);
+	box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+	color: var(--White);
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+.form .form-data {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: var(--White);
+	box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-data .field {
+	width: 100%;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 20px;
+	padding-bottom: 18px;
+	color: var(--Dark-Blue);
+	font-weight: 600;
+	font-size: 1.6rem;
+}
+
+.form-data .field#submit-btn {
+	border: none;
+	padding-bottom: 15px;
+	background-color: var(--Green);
+	box-shadow: 0 5px rgb(48, 158, 111);
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--White);
+	cursor: pointer;
+}
+.field#submit-btn:active {
+	scale: 0.98;
+	opacity: 0.8;
+}
+
+.form-data li:last-child p {
+	display: block;
+	padding: 15px 20px;
+	text-align: center;
+	font-size: 1.2rem;
+	color: var(--Grayish-Blue);
+}
+
+.form-data li:last-child p a {
+	font-weight: 600;
+	color: var(--Red);
+}
+
+/* Invalid Field */
+
+.form-data li.invalid {
+	position: relative;
+}
+
+.form-data li.invalid::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 17px;
+	right: 20px;
+	background-repeat: no-repeat;
+	background-image: url(../images/icon-error.svg);
+	background-size: contain;
+}
+
+.form-data li.invalid .field {
+	border-color: var(--Red);
+	color: var(--Red);
+	padding-right: 50px;
+}
+
+.form-data li p {
+	display: none;
+	margin-top: 5px;
+	text-align: right;
+	font-size: 1rem;
+	font-weight: 500;
+	font-style: italic;
+	color: var(--Red);
+}
+.form-data li.invalid p {
+	display: block;
+}
